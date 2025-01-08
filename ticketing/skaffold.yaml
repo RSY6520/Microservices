@@ -12,8 +12,7 @@ build:
       context: auth
       docker:
         dockerfile: Dockerfile
-      # sync:
-        # manual:
-        #   - dest: .
-        #     src: 'src/**/*.ts'
-        # auto: false
+      sync:
+        manual:
+          - dest: .
+            src: 'src/**/*.ts'

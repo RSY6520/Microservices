@@ -5,8 +5,8 @@ import { currentUserRouter } from './routes/current-user';
 import { signupRouter } from './routes/signup';
 import { signinRouter } from './routes/signin';
 import { signoutRouter } from './routes/signout';
-import { errorHandler } from './middleares/error-handler';
-import { NotFoundError } from './errors/not-found-error';
+import { errorHandler } from '@rstech/ticketing-common';
+import { NotFoundError } from '@rstech/ticketing-common';
 import cookieSession from 'cookie-session';
 
 const app = express();

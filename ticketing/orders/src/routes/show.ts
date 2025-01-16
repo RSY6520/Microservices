@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-import { Order } from './models/order';
+import { Order } from '../models/order';
 import { NotAuthorizedError, NotFoundError } from '@rstech/ticketing-common';
 
 const router = express.Router();

@@ -1,7 +1,7 @@
 import request from 'supertest';
-import { Ticket } from '../models/ticket';
+import { Ticket } from '../../models/ticket';
 import { app } from '../../app';
-import { Order } from '../models/order';
+import { Order } from '../../models/order';
 import { OrderStatus } from '@rstech/ticketing-common';
 
 it('marks an order as cancelled', async () => {

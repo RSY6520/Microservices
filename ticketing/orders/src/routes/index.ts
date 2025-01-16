@@ -1,6 +1,6 @@
 import { requireAuth } from '@rstech/ticketing-common';
 import express, { Request, Response } from 'express';
-import { Order } from './models/order';
+import { Order } from '../models/order';
 
 const router = express.Router();
 

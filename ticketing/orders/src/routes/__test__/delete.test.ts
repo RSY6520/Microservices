@@ -3,9 +3,11 @@ import { Ticket } from '../../models/ticket';
 import { app } from '../../app';
 import { Order } from '../../models/order';
 import { OrderStatus } from '@rstech/ticketing-common';
+import mongoose from 'mongoose';
 
 it('marks an order as cancelled', async () => {
     const ticket = Ticket.build({
+        id: new mongoose.Types.ObjectId().toHexString(),
         title: "dfxdds",
         price: 34
     });
